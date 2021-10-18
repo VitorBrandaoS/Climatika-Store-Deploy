@@ -1,0 +1,50 @@
+.foto-produto {
+    display: block;
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.nome-produto {
+    font-size: 38px;
+}
+
+.marca-produto {
+    font-size: 28px;
+}
+
+.preco-produto {
+    font-size: 25px;
+}
+
+.descricao {
+    font-size: 1.48rem;
+    min-height: 260px;
+}
+
+.bg-pattern{
+    background-image: url(../../assets/img/logincadastro/patternlogin.png);
+}
+
+.w-max {
+    width: 80%;
+}
+
+.border-produto {
+    border: 1px #49735b83 solid;
+    border-radius: 20px;
+}
+
+.bg-descricao {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.589);
+    margin: 20px 0 20px 0;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 767px){
+    .border-produto{
+        border: 0px;
+    }
+    
+}
