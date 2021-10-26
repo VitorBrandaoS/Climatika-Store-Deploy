@@ -34,12 +34,19 @@ export class CarrinhoComponent implements OnInit {
   ) {   }
 
   ngOnInit() {
+<<<<<<< HEAD
    if (environment.id == 0) {
+=======
+    if (environment.id == 0) {
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
       alert("Opá! Você precisa logar para acessar seu carrinho de compras...")
       this.router.navigate(["/inicio"])
     }
     this.auth.findByIdVenda()
+<<<<<<< HEAD
     this.auth.total()
+=======
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
   }
   
   
@@ -49,6 +56,32 @@ export class CarrinhoComponent implements OnInit {
     })
   }
 
+<<<<<<< HEAD
   
+=======
+  findByIdVenda(id: number){
+    if (id == 0) {
+      alert("Opá! Você precisa logar para acessar seu carrinho de compras...")
+      this.router.navigate(["/inicio"])
+    }else{
+      this.carrinhoService.getByIdVenda(id).subscribe((resp: StatusVenda) => {
+        this.statusVenda = resp
+        return this.statusVenda
+      })
+    }
+  }
+  /*
+  calculoTotal(){     
+    let total = 0
+    this.statusVenda.listaProduto.forEach(element => {
+      let valor = element.preco
+      let quant = element.quant
+      total = total + (valor * quant)
+      this.valorTotal = total
+      return this.valorTotal
+    });
+  }*/
+ 
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 
 }

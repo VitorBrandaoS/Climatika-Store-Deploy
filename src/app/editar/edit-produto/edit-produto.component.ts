@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { Router } from '@angular/router';
+=======
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 import { Produto } from 'src/app/model/Produto';
 import { AuthService } from 'src/app/service/auth.service';
 import { ProdutoService } from 'src/app/service/produto.service';
@@ -15,6 +18,7 @@ export class EditProdutoComponent implements OnInit {
   listaProduto: Produto[]
   constructor(
     private produtoService: ProdutoService,
+<<<<<<< HEAD
     public auth: AuthService,
     private router: Router
   ){ }
@@ -24,6 +28,12 @@ export class EditProdutoComponent implements OnInit {
       alert('Você não tem permissão para acessar esta página!')
       this.router.navigate(['/inicio'])
     }
+=======
+    public auth: AuthService
+  ){ }
+
+  ngOnInit(){
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
     window.scroll(0,0)
     this.auth.getAllProdutos()
   

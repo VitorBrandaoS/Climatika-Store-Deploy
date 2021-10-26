@@ -12,22 +12,33 @@ import { UsuarioService } from '../service/usuario.service';
 export class AtualizarCadastroComponent implements OnInit {
 
   usuario: Usuario = new Usuario
+<<<<<<< HEAD
   usuarioBanco: Usuario = new Usuario
   confirmarSenha: string
   confirmarEmail: string
+=======
+  confirmarSenha: string
+
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
   constructor(
     private usuarioService: UsuarioService,
     private router: Router
   ) { }
 
+<<<<<<< HEAD
   ngOnInit() {
     this.findByIdUser(environment.id)
     this.findByIdUserBanco(environment.id)
+=======
+  ngOnInit(){
+    this.findByIdUser(environment.id)
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
   }
 
   confirmSenha(event: any) {
     this.confirmarSenha = event.target.value
   }
+<<<<<<< HEAD
   confirmEmail(event: any) {
     this.confirmarEmail = event.target.value
   }
@@ -50,11 +61,23 @@ export class AtualizarCadastroComponent implements OnInit {
       this.usuarioService.atualizarSenha(this.usuario).subscribe((resp: Usuario) => {
         this.usuario = resp
         alert("Senha atualizada com sucesso!")
+=======
+
+  atualizarUser(){
+    if (this.usuario.senha != this.confirmarSenha) {
+      alert("As senhas estão incorretas.")
+    }else{
+      this.usuario.id = environment.id
+      this.usuarioService.atualizarUsuario(this.usuario).subscribe((resp: Usuario) =>{
+        this.usuario = resp
+        alert("Usuario atualizado com sucesso!")
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
         this.router.navigate(["/entrar"])
       })
     }
   }
 
+<<<<<<< HEAD
   atualizarEmail() {
 
     if (this.usuario.email != this.confirmarEmail) {
@@ -89,4 +112,12 @@ export class AtualizarCadastroComponent implements OnInit {
     })
   }
 
+=======
+  findByIdUser(id: number){
+    this.usuarioService.getByIdUsuario(id).subscribe((resp: Usuario) =>{
+      this.usuario = resp 
+    })
+  }
+  
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 }

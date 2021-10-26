@@ -1,15 +1,28 @@
+<<<<<<< HEAD
 .layoutCarrinho {
+=======
+.layoutCarrinho{
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
     width: 80%;
     height: 500px;
     border: 2px;
     border-style: groove;
     border-radius: 30px;
+<<<<<<< HEAD
     border-color: #d9e4d639;
 }
 
 .fundoCarrinho {
     background-image: url("../../assets/img/logincadastro/patternlogin.png");
     border-radius: 25px;
+=======
+    border-color: #5b866e9d;
+}
+
+.fundoCarrinho{
+    background-image: url("../../assets/img/logincadastro/patternlogin.png");
+    border-radius: 30px;
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 }
 
 .lista-prod {
@@ -19,6 +32,7 @@
     margin-bottom: 30px;
 }
 
+<<<<<<< HEAD
 .x {
     color: rgb(0, 0, 0);
 }
@@ -30,10 +44,14 @@
 a {
     font-family: comfortaa;
     font-size: 13px;
+=======
+a {
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
     cursor: pointer;
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 h2 {
     font-family: comfortaa;
     font-size: 25px;
@@ -44,18 +62,29 @@ h2 {
     font-family: comfortaa;
 }
 
+=======
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 .x {
     font-size: 10pt;
 }
 
+<<<<<<< HEAD
 .tot {
     align-items: center;
     font-size: 30pt;
+=======
+
+.tot{
+    align-items: center;
+    font-size: 30pt;
+    
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 }
 
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
+<<<<<<< HEAD
 }
 
 ::-webkit-scrollbar-thumb {
@@ -126,3 +155,14 @@ button:hover {
 }
 
 /*FIM DE BOTOES*/
+=======
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #4c6b5a;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+  }
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf

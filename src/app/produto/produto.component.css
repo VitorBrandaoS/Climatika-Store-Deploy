@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*FONTES*/
 
 h4{
@@ -46,6 +47,8 @@ button {
 
 /*FIM DE BOTAO*/
 
+=======
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 .foto-produto {
     display: block;
     max-width: 500px;
@@ -90,10 +93,13 @@ button {
     margin: 20px 0 20px 0;
 }
 
+<<<<<<< HEAD
 .card-body{
     border-radius: 20px;
 }
 
+=======
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 @media only screen and (min-width: 150px) and (max-width: 767px){
     .border-produto{
         border: 0px;

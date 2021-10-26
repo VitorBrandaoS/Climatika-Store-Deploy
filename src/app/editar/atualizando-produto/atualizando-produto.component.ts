@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Produto } from 'src/app/model/Produto';
+<<<<<<< HEAD
 import { AuthService } from 'src/app/service/auth.service';
+=======
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 import { ProdutoService } from 'src/app/service/produto.service';
 
 @Component({
@@ -16,6 +19,7 @@ export class AtualizandoProdutoComponent implements OnInit {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
+<<<<<<< HEAD
     private produtoService: ProdutoService,
     private auth: AuthService
   ) { }
@@ -25,6 +29,12 @@ export class AtualizandoProdutoComponent implements OnInit {
       alert('Você não tem permissão para acessar esta página!')
       this.router.navigate(['/inicio'])
     }
+=======
+    private produtoService: ProdutoService
+  ) { }
+
+  ngOnInit() {
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
     this.codigoProduto = this.route.snapshot.params["id"]
     this.findByIdProduto(this.codigoProduto)
   }
@@ -42,6 +52,7 @@ export class AtualizandoProdutoComponent implements OnInit {
       this.produto = resp 
     })
   }
+<<<<<<< HEAD
 
   identificador(){
     let categ = ""
@@ -61,4 +72,6 @@ export class AtualizandoProdutoComponent implements OnInit {
     return categ
   }
 
+=======
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 }

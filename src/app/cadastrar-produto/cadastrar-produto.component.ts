@@ -2,7 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Produto } from '../model/Produto';
+<<<<<<< HEAD
 import { AuthService } from '../service/auth.service';
+=======
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 import { ProdutoService } from '../service/produto.service';
 
 @Component({
@@ -13,6 +16,7 @@ import { ProdutoService } from '../service/produto.service';
 export class CadastrarProdutoComponent implements OnInit {
 
   produto: Produto = new Produto()
+<<<<<<< HEAD
   
   constructor(
     private router: Router,
@@ -45,6 +49,19 @@ export class CadastrarProdutoComponent implements OnInit {
       categ = "Pet"
     }
     return categ
+=======
+
+  constructor(
+    private router: Router,
+    private produtoService: ProdutoService
+  ) { }
+
+  ngOnInit(){
+    if(environment.token == ''){
+      alert('Você não tem permissão para acessar esta página!')
+      this.router.navigate(['/inicio'])
+    }
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
   }
 
   cadastrarProduto(){
@@ -53,6 +70,11 @@ export class CadastrarProdutoComponent implements OnInit {
       console.log(Produto)
       alert('Produto cadastrado!')
       this.produto = new Produto()
+<<<<<<< HEAD
+=======
+      
+
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
     })
   }
 

@@ -17,19 +17,27 @@ export class FinalizarCompraComponent implements OnInit {
 
   constructor(
     private usuarioService: UsuarioService,
+<<<<<<< HEAD
     public auth: AuthService,
+=======
+    private auth: AuthService,
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
     private carrinhoService: CarrinhoService
   ) { }
 
   ngOnInit() {
     this.findUserById()
+<<<<<<< HEAD
     this.auth.findByIdVenda()
+=======
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
   }
 
   findUserById(){
     this.usuarioService.getByIdUsuario(environment.id).subscribe((resp: Usuario) =>{
       this.usuario = resp
     })
+<<<<<<< HEAD
   }
 
   limpar(){
@@ -40,4 +48,33 @@ export class FinalizarCompraComponent implements OnInit {
 
   
 
+=======
+
+  }
+
+  /*
+  findByCategoriaFilha(nome: string){  
+    this.produtoService.getByCategoriaFilha(nome).subscribe((resp: Produto[]) =>{
+      this.listaProduto = resp climatika-store-ecommerce
+    })
+}
+*/
+
+  removerProduto(idProduto: number){
+    this.carrinhoService.removerItem(idProduto, environment.id).subscribe((resp: StatusVenda) => {
+      this.auth.statusVenda = resp
+    })
+  }
+/*
+  limparLista(){
+    let lista
+    this.auth.findByIdVenda(this.auth.usuario.userStatusVenda.id)
+    this.auth.statusVenda.listaProduto.forEach(element => {
+      console.log("Elemento de código " + element.codigo + ", removido!")
+      this.removerProduto(element.codigo)
+    })
+    console.log(lista)
+  }
+*/
+>>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 }
