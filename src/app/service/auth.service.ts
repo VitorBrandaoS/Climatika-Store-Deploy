@@ -103,7 +103,7 @@ export class AuthService {
   telaCadastro() {
     let ok = true
     let url_atual = window.location.href;
-    if (url_atual == "http://localhost:4200/cadastrar" || url_atual == "http://localhost:4200/entrar") {
+    if (url_atual == "https://climatika-store.netlify.app/cadastrar" || url_atual == "https://climatika-store.netlify.app/entrar") {
       ok = false
     }
     return ok
