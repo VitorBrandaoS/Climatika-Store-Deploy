@@ -34,11 +34,12 @@ export class CarrinhoComponent implements OnInit {
   ) {   }
 
   ngOnInit() {
-    if (environment.id == 0) {
+   if (environment.id == 0) {
       alert("Opá! Você precisa logar para acessar seu carrinho de compras...")
       this.router.navigate(["/inicio"])
     }
     this.auth.findByIdVenda()
+    this.auth.total()
   }
   
   
@@ -48,28 +49,6 @@ export class CarrinhoComponent implements OnInit {
     })
   }
 
-  findByIdVenda(id: number){
-    if (id == 0) {
-      alert("Opá! Você precisa logar para acessar seu carrinho de compras...")
-      this.router.navigate(["/inicio"])
-    }else{
-      this.carrinhoService.getByIdVenda(id).subscribe((resp: StatusVenda) => {
-        this.statusVenda = resp
-        return this.statusVenda
-      })
-    }
-  }
-  /*
-  calculoTotal(){     
-    let total = 0
-    this.statusVenda.listaProduto.forEach(element => {
-      let valor = element.preco
-      let quant = element.quant
-      total = total + (valor * quant)
-      this.valorTotal = total
-      return this.valorTotal
-    });
-  }*/
- 
+  
 
 }
