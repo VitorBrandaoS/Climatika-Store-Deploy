@@ -1,5 +1,4 @@
 .bg-rodape {
-<<<<<<< HEAD
     background-color: #798e77;
 }
 
@@ -175,40 +174,4 @@ button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
     background: rgb(98, 131, 100);
-=======
-  background-color:#798e77;
-}
-
-ul.social-network li{
-  display: inline;
-  padding:5px;
-  
-}
-
-.icone-rodape {
-  width: 25px;
-  height: 25px;
-}
-
-.icone-pagamento {
-  max-height: 32px;
-  margin-left: 10px;
-  margin-bottom: 15px;
-  
-  
-}
-
-.vertical-rule {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-}
-
-.hr1{
-  margin-left: 100px;
-  line-height: 50px;
-}
-
-a{
-  text-decoration: none;
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 }

@@ -14,7 +14,6 @@
     src: url(assets/font/AnotherDayV2.ttf) format('truetype');
 }
 
-<<<<<<< HEAD
 @font-face {
     font-family: caviar;
     src: url(assets/font/CaviarDreams.ttf) format('truetype');
@@ -25,8 +24,6 @@
     src: url(assets/font/Comfortaa-Regular.ttf) format('truetype');
 }
 
-=======
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 
 /*FIM DE FONTES*/
 
@@ -58,8 +55,4 @@
 
 .bg-geral {
     background-image: url(assets/img/logincadastro/patternlogin.png);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf

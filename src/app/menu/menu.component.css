@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .fontnavbar{
     font-family: comfortaa;
     text-transform: uppercase;
@@ -22,24 +21,11 @@ a {
 .bg-subcatg{
     background-color: #798e77;
 }
-=======
-a {
-    color:aliceblue !important;
-}
-
-
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 
 a:hover {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
-.dropitem:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 
 #logo{
     width: 140px;
@@ -65,7 +51,6 @@ a:hover {
     background-color: #798e77;
 }
 
-<<<<<<< HEAD
 /* MENU */
 
 .dropdown-menu{
@@ -89,9 +74,6 @@ a:hover {
 .pesquisa {
     font-family: comfortaa;
     font-size: 12px;
-=======
-.pesquisa {
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
     width: 300px;
     border-radius: 10px;
 }
@@ -116,11 +98,8 @@ input:enabled{
     box-shadow: #5D7963 !important;
 }
 
-<<<<<<< HEAD
 /* FIM DE INPUT */
 
-=======
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 
 .hr-menu {
     border-top: 1px solid white;
@@ -131,7 +110,6 @@ input:enabled{
     background: #42594A;
 }
 
-<<<<<<< HEAD
 .ola{
     font-family: comfortaa;
     font-size: 13px;
@@ -189,32 +167,3 @@ input:enabled{
   ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.2);
   }
-=======
-.btn-login {
-    background-color: aliceblue;
-    color:#42594A;
-}
-
-.btn-login:hover {
-    background-color: #b0c68d;
-    color: aliceblue;
-    border: 1px #42594A solid;
-}
-
-.btn-verde {
-    background: #42594A;
-}
-
-.btn-adm {
-    background: #42594A;
-}
-.btn-adm:hover{
-    background-color: rgba(255, 201, 51, 0.719);
-}
-
-.btn-verde:hover {
-    background-color: #b0c68d;
-    border: 1px #42594A solid;
-}
-
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf

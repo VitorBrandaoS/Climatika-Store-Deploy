@@ -25,7 +25,6 @@ export class UsuarioService {
     return this.http.put<Usuario>("https://climatika-store-ecommerce.herokuapp.com/climatika/usuario/atualizar", user , this.token)
   }
 
-<<<<<<< HEAD
   atualizarSenha(user: Usuario): Observable<Usuario> {
     return this.http.put<Usuario>("https://climatika-store-ecommerce.herokuapp.com/climatika/usuario/atualizar/senha", user , this.token)
   }
@@ -34,6 +33,4 @@ export class UsuarioService {
     return this.http.put<Usuario>("https://climatika-store-ecommerce.herokuapp.com/climatika/usuario/atualizar/email", user , this.token)
   }
 
-=======
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 }

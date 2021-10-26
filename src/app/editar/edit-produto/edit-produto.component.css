@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .img-config {
     width: 180px;
     height: 190px;
@@ -29,24 +28,11 @@
 .preco {
     font-family: comfortaa;
     font-size: 12px;
-=======
-.img-config{
-    width: 180px; 
-    height: 190px;
-    object-fit: contain;
-}
-
-.descri {
-    max-height: 100px;
-    overflow: auto;
-    text-overflow: ellipsis;
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 }
 
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
-<<<<<<< HEAD
 }
 
  ::-webkit-scrollbar-thumb {
@@ -93,14 +79,3 @@
     background-color: rgb(241, 113, 113);
     transform: scale(0.8);
 }
-=======
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: rgb(90, 90, 90);
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.2);
-  }
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf

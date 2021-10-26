@@ -1,12 +1,9 @@
 .fundo{
   background-image: url('../../assets/img/logincadastro/backgroundforest1.jpg');
   margin: 0;
-<<<<<<< HEAD
   min-height: 969px !important;
   width: auto;
   background-position: center;
-=======
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 }
 
 body, html{
@@ -94,21 +91,14 @@ form {
 
 
 .container {
-<<<<<<< HEAD
   margin-top: 10% !important;
-=======
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 	background-color: #fff;
 	border-radius: 100px 5px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
 	width: 1000px;
-<<<<<<< HEAD
   height: 560px;
-=======
-  height: 90vh;
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 	max-width: 100%;
 	min-height: 480px;
 }
@@ -222,10 +212,7 @@ input:focus{
   position: relative;
 }
 .wrapper .form-group input{
-<<<<<<< HEAD
   font-family: adam;
-=======
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
   height: 100%;
   width: 90%;
   border: none;
@@ -291,10 +278,6 @@ input:focus{
   }
 
   .wrapper .sel select{
-<<<<<<< HEAD
-=======
-    font-family: adam;
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
     height: 100%;
     width: 27%;
     border: none;

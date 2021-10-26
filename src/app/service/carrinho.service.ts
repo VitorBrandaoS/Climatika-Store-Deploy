@@ -36,7 +36,6 @@ export class CarrinhoService {
     return this.http.get<StatusVenda>(`https://climatika-store-ecommerce.herokuapp.com/climatika/status/${id}`, this.token)
   }
 
-<<<<<<< HEAD
   limparLista(id: number): Observable<StatusVenda> {
     return this.http.post<StatusVenda>(`https://climatika-store-ecommerce.herokuapp.com/climatika/status/limpa-carrinho/${id}`, this.token)
   }
@@ -44,10 +43,6 @@ export class CarrinhoService {
   calculoTotal(id: number): Observable<number> {
     return this.http.post<number>(`https://climatika-store-ecommerce.herokuapp.com/climatika/status/calculo-total/${id}`, this.token)
   }
-=======
-
- 
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 
 
 }

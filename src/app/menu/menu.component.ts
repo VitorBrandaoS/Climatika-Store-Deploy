@@ -3,10 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment.prod';
 import { StatusVenda } from '../model/StatusVenda';
 import { AuthService } from '../service/auth.service';
-<<<<<<< HEAD
 
-=======
->>>>>>> f7172561d0fb34240090d812a7647c7199745ecf
 import { CarrinhoService } from '../service/carrinho.service';
 import { Usuario } from '../model/Usuario';
 import { UsuarioService } from '../service/usuario.service';
