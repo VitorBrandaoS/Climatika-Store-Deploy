@@ -55,7 +55,7 @@ export class CadastrarComponent implements OnInit {
   cadastrar() {
     if (this.usuario.senha != this.confirmarSenha) {
       alert("As senhas estão incorretas.")
-    }else if(this.confirmSenha.length < 5 || this.usuario.senha.length < 5){
+    }else if(this.confirmarSenha.length < 5 || this.usuario.senha.length < 5){
       alert("Atenção! Sua senha precisa ter no mínimo 5 caracteres!")
     } else if(this.celular.length != 11){
       alert("São apenas 11 dígitos que aceitamos para o cadastro do seu celular!")
