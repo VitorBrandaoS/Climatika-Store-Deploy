@@ -62,11 +62,10 @@ export class CadastrarComponent implements OnInit {
     } else {
       this.authService.cadastrar(this.usuario).subscribe((resp: Usuario) => {        
         this.usuario = resp
-      },erro =>{
-        if(erro.status == 500){
-          alert('Algo deu errado! Por favor, confira seus dados e tente novamente.')
-        }
-        else{
+
+        alert("Usuario cadastrado com sucesso!")
+          this.router.navigate(["/entrar"])
+
           console.log(this.usuario.id)
           console.log(this.usuario.nomeCompleto)
           console.log(this.usuario.email)
@@ -75,10 +74,13 @@ export class CadastrarComponent implements OnInit {
           console.log(this.usuario.celular)
           console.log(this.usuario.cidade)
           console.log(this.usuario.estado)
-          alert("Usuario cadastrado com sucesso!")
-          this.router.navigate(["/entrar"])
+      },erro =>{
+        if(erro.status == 500){
+          alert('Algo deu errado! Por favor, confira seus dados e tente novamente.')
+        }if(erro.status == 400){
+          alert('Algo deu errado! Por favor, confira seus dados e tente novamente.')
         }
-      })      
+      })
     }
   }
 
